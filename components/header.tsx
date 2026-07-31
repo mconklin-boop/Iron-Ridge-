@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
@@ -18,7 +19,8 @@ export function Header() {
     <header className="site-header">
       <div className="header-inner container">
         <Link className="brand" href="/" aria-label={`${siteConfig.name} home`}>
-          <strong>IRON RIDGE</strong><span>SERVICE GROUP</span>
+          <Image className="brand-mark" src="/images/branding/iron-ridge-small-logo.png" alt="" width={54} height={54} priority />
+          <span className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           {navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}

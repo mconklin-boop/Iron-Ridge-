@@ -22,6 +22,24 @@ export const metadata: Metadata = {
       "One dependable source for mobile service, auto and diesel repair, fleet support, and transportation.",
     type: "website",
     url: "/",
+    images: [
+      {
+        url: "/images/branding/iron-ridge-main-logo.png",
+        width: 1536,
+        height: 1024,
+        alt: "Iron Ridge Service Group — Built to keep you moving",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: "Fleet, repair, mobile service, and transportation support throughout Colorado.",
+    images: ["/images/branding/iron-ridge-main-logo.png"],
+  },
+  icons: {
+    icon: "/images/branding/iron-ridge-small-logo.png",
+    apple: "/images/branding/iron-ridge-small-logo.png",
   },
   robots: { index: true, follow: true },
 };

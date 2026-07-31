@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
@@ -6,7 +7,10 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container footer-main">
         <div className="footer-brand">
-          <div className="brand"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></div>
+          <div className="footer-lockup">
+            <Image className="footer-logo" src="/images/branding/iron-ridge-small-logo.png" alt="Iron Ridge Service Group" width={112} height={112} />
+            <div className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></div>
+          </div>
           <p>Professional mobile service, shop repair, fleet support, and transportation solutions for Colorado businesses and vehicle owners.</p>
         </div>
         <div className="footer-column">

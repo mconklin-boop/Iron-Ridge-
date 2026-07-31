@@ -1,13 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle2,
-  MapPin,
-  Phone,
-  ShieldCheck,
-  Truck,
-  Wrench,
-} from "lucide-react";
+import { ArrowRight, CheckCircle2, MapPin, Phone, ShieldCheck, Truck, Wrench } from "lucide-react";
 import { DivisionCard } from "@/components/division-card";
 import { SectionHeading } from "@/components/section-heading";
 import { siteConfig } from "@/config/site";
@@ -56,9 +49,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Colorado fleet • repair • logistics</p>
             <h1>One Brand. Complete Fleet, Repair and Transportation Support.</h1>
-            <p className="hero-lede">
-              Iron Ridge Service Group provides professional shop repair, mobile fleet service, roadside support, and transportation solutions for businesses and vehicle owners throughout Colorado.
-            </p>
+            <p className="hero-lede">Iron Ridge Service Group provides professional shop repair, mobile fleet service, roadside support, and transportation solutions for businesses and vehicle owners throughout Colorado.</p>
             <div className="button-row">
               <Link className="button button-primary" href="/contact">Request Service <ArrowRight size={18} /></Link>
               <Link className="button button-secondary" href="/contact?division=logistics">Transportation Quote</Link>
@@ -68,21 +59,27 @@ export default function Home() {
               <span><CheckCircle2 size={18} /> Fleet-ready support</span>
             </div>
           </div>
-          <div className="hero-visual" aria-label="Image placeholder for an Iron Ridge service truck">
-            <div className="visual-badge"><Truck size={32} /><span>Mobile • Shop • Logistics</span></div>
-            <p>IRON RIDGE</p>
-            <strong>Built to keep you moving.</strong>
-            <small>Replace with final branded fleet photography.</small>
+          <div className="hero-visual">
+            <Image className="hero-logo-image" src="/images/branding/iron-ridge-main-logo.png" alt="Iron Ridge Service Group — Built to keep you moving" fill priority sizes="(max-width: 980px) 100vw, 44vw" />
+            <div className="hero-visual-content">
+              <div className="visual-badge"><Truck size={28} /><span>Mobile • Shop • Logistics</span></div>
+              <strong>Built to keep you moving.</strong>
+              <small>One professional service group. Three specialized divisions.</small>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="brand-ribbon" aria-label="Iron Ridge service standard">
+        <div className="container brand-ribbon-inner">
+          <span>Shop repair</span><i aria-hidden="true" /><span>Mobile service</span><i aria-hidden="true" /><span>Fleet support</span><i aria-hidden="true" /><span>Transportation</span>
         </div>
       </section>
 
       <section className="division-section section" id="divisions">
         <div className="container">
           <SectionHeading eyebrow="Three specialized divisions" title="One reliable service group" description="Choose the team that fits the job. Every division shares the same focus on uptime, accurate communication, and long-term customer relationships." />
-          <div className="division-grid">
-            {divisions.map((division, index) => <DivisionCard key={division.title} {...division} index={index + 1} />)}
-          </div>
+          <div className="division-grid">{divisions.map((division, index) => <DivisionCard key={division.title} {...division} index={index + 1} />)}</div>
         </div>
       </section>
 
@@ -92,9 +89,7 @@ export default function Home() {
             <SectionHeading eyebrow="Built to keep you moving" title="Practical support for vehicles, fleets, and businesses" description="From a single disabled unit to coordinated fleet maintenance and transportation, Iron Ridge is structured to reduce downtime and simplify service." />
             <Link className="text-link" href="/about">Why Iron Ridge <ArrowRight size={17} /></Link>
           </div>
-          <ul className="check-list">
-            {capabilities.map((item) => <li key={item}><CheckCircle2 size={20} />{item}</li>)}
-          </ul>
+          <ul className="check-list">{capabilities.map((item) => <li key={item}><CheckCircle2 size={20} />{item}</li>)}</ul>
         </div>
       </section>
 
