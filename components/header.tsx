@@ -19,7 +19,7 @@ export function Header() {
     <header className="site-header">
       <div className="header-inner container">
         <Link className="brand" href="/" aria-label={`${siteConfig.name} home`}>
-          <Image className="brand-mark" src="/images/branding/iron-ridge-small-logo.png" alt="" width={54} height={54} priority />
+          <Image className="brand-mark" src="/images/branding/iron-ridge-small-logo.png" alt="" width={54} height={54} priority unoptimized />
           <span className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
