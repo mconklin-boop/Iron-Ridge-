@@ -44,6 +44,10 @@ const capabilities = [
 export default function Home() {
   return (
     <>
+      <section className="home-brand-banner" aria-label="Iron Ridge Service Group services">
+        <Image className="home-brand-banner-image" src="/images/branding/iron-ridge-brand-banner.jpg" alt="Iron Ridge Service Group automotive, diesel, fleet, equipment, and mobile service" width={1400} height={583} priority unoptimized />
+      </section>
+
       <section className="hero">
         <div className="hero-grid container">
           <div className="hero-copy">
@@ -59,28 +63,12 @@ export default function Home() {
               <span><CheckCircle2 size={18} /> Fleet-ready support</span>
             </div>
           </div>
-          <div className="hero-visual">
-            <Image className="hero-logo-image" src="/images/branding/iron-ridge-main-logo.jpg" alt="Iron Ridge Service Group — Built to keep you moving" fill priority unoptimized sizes="(max-width: 980px) 100vw, 44vw" />
-            <div className="hero-visual-content">
-              <div className="visual-badge"><Truck size={28} /><span>Mobile • Shop • Logistics</span></div>
-              <strong>Built to keep you moving.</strong>
-              <small>One professional service group. Three specialized divisions.</small>
-            </div>
-          </div>
         </div>
       </section>
 
       <section className="brand-ribbon" aria-label="Iron Ridge service standard">
         <div className="container brand-ribbon-inner">
           <span>Shop repair</span><i aria-hidden="true" /><span>Mobile service</span><i aria-hidden="true" /><span>Fleet support</span><i aria-hidden="true" /><span>Transportation</span>
-        </div>
-      </section>
-
-      <section className="home-logo-showcase" aria-label="Iron Ridge Service Group">
-        <div className="container home-logo-showcase-inner">
-          <span className="home-logo-line" aria-hidden="true" />
-          <Image className="home-centered-logo" src="/images/branding/iron-ridge-header-logo.jpg" alt="Iron Ridge Service Group — Built to keep you moving" width={485} height={228} unoptimized />
-          <span className="home-logo-line" aria-hidden="true" />
         </div>
       </section>
 
