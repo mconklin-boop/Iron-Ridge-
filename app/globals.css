@@ -118,6 +118,8 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
 .footer-brand p { max-width: 390px; margin-top: 20px; color: #888f93; }
 .footer-column h2 { margin-bottom: 20px; color: white; font-size: .74rem; letter-spacing: .13em; text-transform: uppercase; }
 .footer-column a, .footer-column span { display: block; margin: 10px 0; color: #9da3a6; font-size: .9rem; }
+.footer-column .social-link { display: inline-flex; align-items: center; gap: 8px; color: var(--orange); font-weight: 800; }
+.footer-column .social-link:hover { color: white; }
 .footer-column a:hover { color: white; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 30px; padding: 22px 0 28px; border-top: 1px solid #292d2f; color: #737a7e; font-size: .76rem; }
 .footer-legal { display: flex; gap: 20px; }

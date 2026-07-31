@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Facebook } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export function Footer() {
@@ -24,6 +25,7 @@ export function Footer() {
         <div className="footer-column">
           <h2>Contact</h2>
           <a href={siteConfig.links.phone}>{siteConfig.phone}</a><a href={siteConfig.links.email}>{siteConfig.email}</a><span>{siteConfig.serviceArea}</span><span>{siteConfig.hours}</span>
+          <a className="social-link" href={siteConfig.social.facebook} target="_blank" rel="noreferrer"><Facebook size={18} /> Facebook</a>
         </div>
       </div>
       <div className="container footer-bottom">

@@ -22,7 +22,7 @@ export const siteConfig = {
     mc: "MC number to be confirmed",
   },
   social: {
-    facebook: "#",
+    facebook: "https://www.facebook.com/profile.php?id=61592518599033",
     instagram: "#",
     linkedin: "#",
     googleBusinessProfile: "#",
