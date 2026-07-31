@@ -76,6 +76,14 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="home-logo-showcase" aria-label="Iron Ridge Service Group">
+        <div className="container home-logo-showcase-inner">
+          <span className="home-logo-line" aria-hidden="true" />
+          <Image className="home-centered-logo" src="/images/branding/iron-ridge-header-logo.jpg" alt="Iron Ridge Service Group — Built to keep you moving" width={485} height={228} unoptimized />
+          <span className="home-logo-line" aria-hidden="true" />
+        </div>
+      </section>
+
       <section className="division-section section" id="divisions">
         <div className="container">
           <SectionHeading eyebrow="Three specialized divisions" title="One reliable service group" description="Choose the team that fits the job. Every division shares the same focus on uptime, accurate communication, and long-term customer relationships." />

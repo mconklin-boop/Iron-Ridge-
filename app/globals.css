@@ -72,6 +72,13 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
 .brand-ribbon-inner { min-height: 68px; display: flex; align-items: center; justify-content: center; gap: 26px; font-weight: 950; letter-spacing: .09em; text-transform: uppercase; }
 .brand-ribbon i { width: 6px; height: 6px; background: #0a0a0a; transform: rotate(45deg); }
 
+
+.home-logo-showcase { overflow: hidden; border-bottom: 1px solid #303437; background: radial-gradient(circle at center, #25282a 0, #111315 56%, #070809 100%); }
+.home-logo-showcase-inner { min-height: 500px; display: flex; align-items: center; justify-content: center; gap: 42px; padding-block: 72px; }
+.home-centered-logo { width: min(680px, 68vw); height: auto; box-shadow: 0 28px 80px rgba(0,0,0,.48); }
+.home-logo-line { width: min(110px, 9vw); height: 3px; background: linear-gradient(90deg, transparent, var(--orange)); }
+.home-logo-line:last-child { transform: rotate(180deg); }
+
 .section-heading { max-width: 720px; }
 .section-heading h2 { margin-bottom: 18px; font-size: clamp(2.2rem, 4.1vw, 3.65rem); text-transform: uppercase; }
 .section-heading > p:last-child { margin: 0; color: #5c6266; }
@@ -128,6 +135,8 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { min-height: 330px; }
   .brand-ribbon-inner { flex-wrap: wrap; gap: 14px 20px; padding-block: 16px; }
+  .home-logo-showcase-inner { min-height: 400px; gap: 22px; padding-block: 56px; }
+  .home-centered-logo { width: min(620px, 78vw); }
   .division-grid { grid-template-columns: 1fr; }
   .division-card { min-height: auto; }
   .capabilities-grid { grid-template-columns: 1fr; gap: 42px; }
@@ -150,6 +159,9 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
   .hero-visual-content { inset: auto 18px 18px; }
   .brand-ribbon-inner { justify-content: flex-start; font-size: .72rem; }
   .brand-ribbon i { display: none; }
+  .home-logo-showcase-inner { min-height: 320px; gap: 12px; padding-block: 44px; }
+  .home-centered-logo { width: 88vw; }
+  .home-logo-line { display: none; }
   .check-list { grid-template-columns: 1fr; }
   .cta-inner { align-items: flex-start; flex-direction: column; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 34px 20px; }
