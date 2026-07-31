@@ -23,8 +23,9 @@ button, input, select, textarea { font: inherit; }
 .skip-link:focus { top: 16px; }
 
 .site-header { position: sticky; top: 0; z-index: 50; border-bottom: 2px solid var(--orange); background: rgba(7,8,9,.96); color: var(--white); backdrop-filter: blur(12px); box-shadow: 0 8px 30px rgba(0,0,0,.3); }
-.header-inner { min-height: 78px; display: flex; align-items: center; gap: 28px; }
+.header-inner { min-height: 104px; display: flex; align-items: center; gap: 28px; }
 .brand { display: flex; align-items: center; gap: 12px; line-height: 1; letter-spacing: .12em; }
+.header-logo { display: block; width: 205px; height: auto; }
 .brand-mark { width: 54px; height: 54px; border: 1px solid #b9bcbf; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #111, 0 0 0 3px var(--orange); }
 .brand-words { display: flex; flex-direction: column; }
 .brand-words strong { color: #f4f4f4; font-size: 1.08rem; letter-spacing: .12em; }
@@ -137,7 +138,8 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
 @media (max-width: 640px) {
   .container { width: min(100% - 28px, 1180px); }
   .section { padding: 68px 0; }
-  .header-inner { min-height: 70px; gap: 12px; }
+  .header-inner { min-height: 84px; gap: 12px; }
+  .header-logo { width: 150px; }
   .brand-mark { width: 45px; height: 45px; }
   .brand-words strong { font-size: .92rem; }
   .brand-words span { font-size: .52rem; }
