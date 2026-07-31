@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container footer-main">
         <div className="footer-brand">
           <div className="footer-lockup">
-            <Image className="footer-logo" src="/images/branding/iron-ridge-small-logo.png" alt="Iron Ridge Service Group" width={112} height={112} unoptimized />
+            <Image className="footer-logo" src="/images/branding/iron-ridge-small-logo.jpg" alt="Iron Ridge Service Group" width={112} height={112} unoptimized />
             <div className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></div>
           </div>
           <p>Professional mobile service, shop repair, fleet support, and transportation solutions for Colorado businesses and vehicle owners.</p>

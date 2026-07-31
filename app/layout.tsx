@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     url: "/",
     images: [
       {
-        url: "/images/branding/iron-ridge-main-logo.png",
-        width: 1536,
-        height: 1024,
+        url: "/images/branding/iron-ridge-main-logo.jpg",
+        width: 600,
+        height: 400,
         alt: "Iron Ridge Service Group — Built to keep you moving",
       },
     ],
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: "Fleet, repair, mobile service, and transportation support throughout Colorado.",
-    images: ["/images/branding/iron-ridge-main-logo.png"],
+    images: ["/images/branding/iron-ridge-main-logo.jpg"],
   },
   icons: {
-    icon: "/images/branding/iron-ridge-small-logo.png",
-    apple: "/images/branding/iron-ridge-small-logo.png",
+    icon: "/images/branding/iron-ridge-small-logo.jpg",
+    apple: "/images/branding/iron-ridge-small-logo.jpg",
   },
   robots: { index: true, follow: true },
 };

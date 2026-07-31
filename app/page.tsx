@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <Image className="hero-logo-image" src="/images/branding/iron-ridge-main-logo.png" alt="Iron Ridge Service Group — Built to keep you moving" fill priority unoptimized sizes="(max-width: 980px) 100vw, 44vw" />
+            <Image className="hero-logo-image" src="/images/branding/iron-ridge-main-logo.jpg" alt="Iron Ridge Service Group — Built to keep you moving" fill priority unoptimized sizes="(max-width: 980px) 100vw, 44vw" />
             <div className="hero-visual-content">
               <div className="visual-badge"><Truck size={28} /><span>Mobile • Shop • Logistics</span></div>
               <strong>Built to keep you moving.</strong>
