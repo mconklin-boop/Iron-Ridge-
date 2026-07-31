@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 1.9 seconds
-Output:
 # Iron Ridge Service Group
 
 Production-ready starter website for a Colorado service group connecting mobile automotive and diesel service, a full-service repair shop, fleet support, and transportation logistics under one brand.
@@ -169,4 +166,3 @@ Before a public launch, confirm and replace:
 - Analytics and consent controls selected with the business owner
 
 All claims about service availability, operating area, licensing, insurance, authority, response time, and pricing must remain subject to confirmation until verified by the business.
-
