@@ -54,10 +54,6 @@ export default function Home() {
             <p className="eyebrow">Colorado fleet • repair • logistics</p>
             <h1>One Brand. Complete Fleet, Repair and Transportation Support.</h1>
             <p className="hero-lede">Iron Ridge Service Group provides professional shop repair, mobile fleet service, roadside support, and transportation solutions for businesses and vehicle owners throughout Colorado.</p>
-            <div className="button-row">
-              <Link className="button button-primary" href="/contact">Request Service <ArrowRight size={18} /></Link>
-              <Link className="button button-secondary" href="/contact?division=logistics">Transportation Quote</Link>
-            </div>
             <div className="hero-trust" aria-label="Service highlights">
               <span><ShieldCheck size={18} /> Professional service</span>
               <span><CheckCircle2 size={18} /> Fleet-ready support</span>

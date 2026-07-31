@@ -144,11 +144,11 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
   .container { width: min(100% - 28px, 1180px); }
   .section { padding: 68px 0; }
   .header-inner { min-height: 84px; gap: 12px; }
-  .header-logo { width: 150px; }
+  .header-logo { width: 120px; }
   .brand-mark { width: 45px; height: 45px; }
   .brand-words strong { font-size: .92rem; }
   .brand-words span { font-size: .52rem; }
-  .header-call span { display: none; }
+  .header-call { font-size: .74rem; }
   .hero-grid { min-height: auto; gap: 48px; padding-block: 70px; }
   h1 { font-size: clamp(2.7rem, 14vw, 4rem); }
   .hero-visual { min-height: 290px; box-shadow: 8px 8px 0 var(--orange); }
