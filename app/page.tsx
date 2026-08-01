@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, MapPin, Phone, ShieldCheck, Truck, Wrench } from "lucide-react";
+import { ArrowRight, CheckCircle2, Facebook, MapPin, Phone, ShieldCheck, Truck, Wrench } from "lucide-react";
 import { DivisionCard } from "@/components/division-card";
 import { SectionHeading } from "@/components/section-heading";
 import { siteConfig } from "@/config/site";
@@ -45,7 +45,10 @@ export default function Home() {
   return (
     <>
       <section className="home-brand-banner" aria-label="Iron Ridge Service Group services">
-        <Image className="home-brand-banner-image" src="/images/branding/iron-ridge-brand-banner.jpg" alt="Iron Ridge Service Group automotive, diesel, fleet, equipment, and mobile service" width={1400} height={583} priority unoptimized />
+        <div className="home-brand-banner-inner">
+          <Image className="home-brand-banner-image" src="/images/branding/iron-ridge-brand-banner.jpg" alt="Iron Ridge Service Group automotive, diesel, fleet, equipment, and mobile service" width={1400} height={583} priority unoptimized />
+          <a className="home-facebook-link" href={siteConfig.social.facebook} target="_blank" rel="noreferrer" aria-label="Visit Iron Ridge Service Group on Facebook"><Facebook size={25} /><span>Follow us on Facebook</span></a>
+        </div>
       </section>
 
       <section className="hero">

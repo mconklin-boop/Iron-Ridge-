@@ -49,7 +49,12 @@ button, input, select, textarea { font: inherit; }
 .simple-page .button:not(.button-primary) { border-color: var(--ink); color: var(--ink); }
 
 .home-brand-banner { overflow: hidden; border-bottom: 2px solid var(--orange); background: #050607; }
-.home-brand-banner-image { display: block; width: min(100%, 1400px); height: auto; margin-inline: auto; }
+.home-brand-banner-inner { position: relative; width: min(100%, 1400px); margin-inline: auto; }
+.home-brand-banner-image { display: block; width: 100%; height: auto; }
+.home-facebook-link { position: absolute; right: 30px; bottom: 18px; min-height: 54px; display: inline-flex; align-items: center; gap: 12px; padding: 0 22px; border: 1px solid var(--orange); background: rgba(5,6,7,.92); color: white; font-size: .85rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.home-facebook-link svg { color: var(--orange); }
+.home-facebook-link:hover, .home-facebook-link:focus-visible { background: var(--orange); color: #090909; }
+.home-facebook-link:hover svg, .home-facebook-link:focus-visible svg { color: #090909; }
 
 .hero { position: relative; overflow: hidden; color: white; background: radial-gradient(circle at 85% 20%, #34383b 0, #151719 38%, #070809 72%); }
 .hero::before { content: ""; position: absolute; inset: 0; opacity: .32; background-image: linear-gradient(120deg, transparent 0 64%, rgba(242,101,0,.28) 64% 66%, transparent 66%), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px); background-size: 100% 100%, 52px 52px, 52px 52px; }
@@ -151,6 +156,7 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
   .brand-words strong { font-size: .92rem; }
   .brand-words span { font-size: .52rem; }
   .header-call { font-size: .74rem; }
+  .home-facebook-link { position: static; width: 100%; min-height: 52px; justify-content: center; font-size: .76rem; }
   .hero-grid { min-height: auto; gap: 48px; padding-block: 70px; }
   h1 { font-size: clamp(2.7rem, 14vw, 4rem); }
   .hero-visual { min-height: 290px; box-shadow: 8px 8px 0 var(--orange); }
