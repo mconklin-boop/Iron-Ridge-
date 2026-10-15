@@ -1,6 +1,7 @@
+import photos from "./product-photos.json";
 export const departments = ["Shop equipment", "Air equipment", "Truck & trailer", "Pressure washers & pumps", "Generators & power", "Maintenance supplies"] as const;
 export type Department = typeof departments[number];
-export type Product = { id: string; slug: string; name: string; category: Department; description: string; request: string; };
+export type Product = { id: string; slug: string; name: string; category: Department; description: string; request: string; image: string; imageSource: string; imageTitle: string; };
 const assortment: [Department, [string, string, string][]][] = [
 ["Shop equipment", [
 ["3-ton low-profile floor jack", "A low-clearance lifting option for passenger vehicles and light trucks.", "Vehicle weight, ground clearance and required lift height"],
@@ -54,4 +55,4 @@ const assortment: [Department, [string, string, string][]][] = [
 ["Generator maintenance kit", "A model-matched kit for scheduled generator maintenance.", "Exact make, model, serial number and service interval"],
 ["Air compressor maintenance kit", "A model-matched compressor service kit.", "Exact compressor make/model, pump and maintenance interval"]]],
 ];
-export const products: Product[] = assortment.flatMap(([category, items], group) => items.map(([name, description, request], index) => ({ id: `IRS-${group + 1}${String(index + 1).padStart(2, "0")}`, slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""), name, category, description, request })));
+export const products: Product[] = assortment.flatMap(([category, items], group) => items.map(([name, description, request], index) => ({ id: `IRS-${group + 1}${String(index + 1).padStart(2, "0")}`, slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""), name, category, description, request, image: photos[`IRS-${group + 1}${String(index + 1).padStart(2, "0")}` as keyof typeof photos].image, imageSource: photos[`IRS-${group + 1}${String(index + 1).padStart(2, "0")}` as keyof typeof photos].source, imageTitle: photos[`IRS-${group + 1}${String(index + 1).padStart(2, "0")}` as keyof typeof photos].title })));
