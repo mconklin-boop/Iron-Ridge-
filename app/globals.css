@@ -85,7 +85,7 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
 .section-heading { max-width: 720px; }
 .section-heading h2 { margin-bottom: 18px; font-size: clamp(2.2rem, 4.1vw, 3.65rem); text-transform: uppercase; }
 .section-heading > p:last-child { margin: 0; color: #5c6266; }
-.division-section { background: white; }
+.division-section { background: white; scroll-margin-top: 120px; }
 .division-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
 .service-grid { grid-template-columns: repeat(2, 1fr); }
 .division-card { position: relative; min-height: 450px; display: flex; flex-direction: column; padding: 32px; border: 1px solid var(--line); background: #f7f7f5; }

@@ -54,7 +54,7 @@ export default function Home() {
             <p className="eyebrow">Colorado fleet • repair • equipment</p>
             <h1>Complete Fleet, Repair and Equipment Support.</h1>
             <p className="hero-lede">Iron Ridge Service provides professional shop repair, mobile fleet service, roadside support, and equipment sales for businesses and vehicle owners throughout Colorado.</p>
-            <div className="button-row"><Link className="button button-primary" href="/shop"><ShoppingBag size={18} /> Shop equipment & supplies <ArrowRight size={18} /></Link><Link className="button button-secondary" href="/#services">Explore repair services</Link></div>
+            <div className="button-row"><Link className="button button-primary" href="/shop"><ShoppingBag size={18} /> Shop equipment & supplies <ArrowRight size={18} /></Link><a className="button button-secondary" href="#services">Explore repair services</a></div>
             <div className="hero-trust" aria-label="Service highlights">
               <span><ShieldCheck size={18} /> Professional service</span>
               <span><CheckCircle2 size={18} /> Fleet-ready support</span>
