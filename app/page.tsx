@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./shop/shop.css";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Facebook, MapPin, Phone, ShieldCheck, Truck, Wrench } from "lucide-react";
 import { DivisionCard } from "@/components/division-card";
@@ -77,6 +78,8 @@ export default function Home() {
           <div className="division-grid">{divisions.map((division, index) => <DivisionCard key={division.title} {...division} index={index + 1} />)}</div>
         </div>
       </section>
+
+      <section className="shop-home-promo"><div className="container"><div><p className="eyebrow">Equipment & Supply</p><h2>Equip the shop. Stock the truck.</h2><p>Explore shop equipment, air tools, trailer supplies, pumps and portable power.</p></div><Link className="button button-primary" href="/shop">Explore equipment <ArrowRight size={18}/></Link></div></section>
 
       <section className="capabilities section">
         <div className="container capabilities-grid">

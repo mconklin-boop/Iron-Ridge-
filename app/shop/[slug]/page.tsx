@@ -1,0 +1,12 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { products } from "@/lib/catalog";
+import { siteConfig } from "@/config/site";
+import "../shop.css";
+export function generateStaticParams() { return products.map(p => ({slug: p.slug})); }
+export async function generateMetadata({ params }: {params: Promise<{slug: string}>}) { const {slug} = await params; const product = products.find(p => p.slug === slug); return { title: product ? `${product.name} — Equipment Quote` : "Equipment not found" }; }
+export default async function ProductPage({params}: {params: Promise<{slug: string}>}) {
+ const {slug} = await params; const product = products.find(p => p.slug === slug); if (!product) notFound();
+ const body = `Please quote: ${product.id} — ${product.name}\n\nQuantity:\nName / company:\nPhone:\nDelivery ZIP / unloading needs:\nApplication / fitment details:\nRequired timing:\n\nPlease confirm exact make/model, specifications, availability, warranty, freight and total price.`;
+ return <section className="container shop-section shop-product"><Link href="/shop" className="shop-detail-link">← All equipment & supplies</Link><p className="eyebrow">{product.category} / {product.id}</p><h1>{product.name}</h1><p className="shop-lede">{product.description}</p><div className="shop-product-grid"><div><h2>Match the equipment to the job.</h2><p>This listing describes a requested equipment type and target specification. The supplied brand and model will be identified in your quote for review.</p><h3>Tell us what you need</h3><p>{product.request}.</p><h3>Before ordering</h3><p>We confirm the exact model, suitability, availability, delivery charges, lead time and warranty with your quote. No stock or delivery date is reserved by an inquiry.</p></div><aside className="shop-quote-box"><p className="eyebrow">Pricing by request</p><h2>Get an equipment quote.</h2><p>Include quantity, application and delivery ZIP so we can price the complete request.</p><a className="button button-primary" href={`mailto:${siteConfig.email}?subject=${encodeURIComponent(`Quote request: ${product.name}`)}&body=${encodeURIComponent(body)}`}>Email a quote request</a><p className="shop-note">Opens your email app. Review and send to {siteConfig.email}.</p><a className="shop-detail-link" href="/shop#catalog">Build a multi-item quote →</a></aside></div></section>;
+}
