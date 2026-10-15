@@ -6,8 +6,8 @@ import { ArrowRight, Check, Search, ShoppingBag, Trash2, Wrench, Wind, Truck, Dr
 import { departments, products, type Department } from "@/lib/catalog";
 import { siteConfig } from "@/config/site";
 const icons = { "Shop equipment": Wrench, "Air equipment": Wind, "Truck & trailer": Truck, "Pressure washers & pumps": Droplets, "Generators & power": Zap, "Maintenance supplies": Settings2 };
-export function ShopCatalog() {
- const [category, setCategory] = useState<Department | "All">("All");
+export function ShopCatalog({ initialDepartment = "All" }: { initialDepartment?: Department | "All" }) {
+ const [category, setCategory] = useState<Department | "All">(initialDepartment);
  const [search, setSearch] = useState("");
  const [selection, setSelection] = useState<Record<string, number>>({});
  const [emailBody, setEmailBody] = useState("");
