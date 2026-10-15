@@ -9,14 +9,14 @@ export function Footer() {
       <div className="container footer-main">
         <div className="footer-brand">
           <div className="footer-lockup">
-            <Image className="footer-logo" src="/images/branding/iron-ridge-small-logo.jpg" alt="Iron Ridge Service Group" width={112} height={112} unoptimized />
-            <div className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE GROUP</span></div>
+            <Image className="footer-logo" src="/images/branding/iron-ridge-service-badge.jpg" alt="Iron Ridge Service" width={112} height={112} unoptimized />
+            <div className="brand-words"><strong>IRON RIDGE</strong><span>SERVICE</span></div>
           </div>
-          <p>Professional mobile service, shop repair, fleet support, and transportation solutions for Colorado businesses and vehicle owners.</p>
+          <p>Professional mobile service, shop repair, fleet support, and equipment sales for Colorado businesses and vehicle owners.</p>
         </div>
         <div className="footer-column">
-          <h2>Divisions</h2>
-          <span>{siteConfig.divisions.mobile}</span><span>{siteConfig.divisions.shop}</span><span>{siteConfig.divisions.logistics}</span>
+          <h2>Services</h2>
+          <span>{siteConfig.divisions.mobile}</span><span>{siteConfig.divisions.shop}</span><Link href="/shop">Equipment & Supply</Link>
         </div>
         <div className="footer-column">
           <h2>Company</h2>
@@ -29,7 +29,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} {siteConfig.name}. Services, availability, operating areas, licensing, and transportation authority are subject to confirmation.</span>
+        <span>© {new Date().getFullYear()} {siteConfig.name}. Services, availability, operating areas, and licensing are subject to confirmation.</span>
         <div className="footer-legal"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div>
       </div>
     </footer>

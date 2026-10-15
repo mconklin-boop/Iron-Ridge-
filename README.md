@@ -1,6 +1,6 @@
-# Iron Ridge Service Group
+# Iron Ridge Service
 
-Production-ready starter website for a Colorado service group connecting mobile automotive and diesel service, a full-service repair shop, fleet support, and transportation logistics under one brand.
+Production-ready starter website for a Colorado service business connecting mobile automotive and diesel service, a full-service repair shop, fleet support, and equipment sales under one brand.
 
 The first deployment milestone includes a responsive homepage, accessible mobile navigation, division overview, central company configuration, contact and about pages, legal pages, custom 404 page, and basic search/social metadata.
 
@@ -61,7 +61,7 @@ Update `config/site.ts` before launch. It is the single source for:
 
 - Company and division names
 - Main and emergency phone numbers
-- General, mobile, shop, and logistics email addresses
+- General, mobile, and shop email addresses
 - Shop address, hours, and service area
 - Social and Google Business Profile links
 - USDOT and MC placeholders
@@ -79,7 +79,7 @@ public/images/divisions/
 public/images/services/
 ```
 
-Use optimized WebP or AVIF files with descriptive names. Replace the styled placeholder in `app/page.tsx` with `next/image`, provide accurate alt text, and set explicit image dimensions. Suggested assets include the final Iron Ridge logo, branded mobile service truck, shop exterior/interior, technicians at work, fleet vehicles, flatbed transport, trailers, and equipment.
+Use optimized WebP or AVIF files with descriptive names. Replace the styled placeholder in `app/page.tsx` with `next/image`, provide accurate alt text, and set explicit image dimensions. Suggested assets include the final Iron Ridge logo, branded mobile service truck, shop exterior/interior, technicians at work, fleet vehicles, trailers, and equipment.
 
 ## Configuring forms
 
@@ -88,7 +88,6 @@ The starter does not send form data. Future forms can use a CRM, Formspree, HubS
 ```env
 NEXT_PUBLIC_GENERAL_FORM_ENDPOINT=
 NEXT_PUBLIC_SERVICE_FORM_ENDPOINT=
-NEXT_PUBLIC_LOGISTICS_FORM_ENDPOINT=
 ```
 
 The central config safely treats blank endpoints as empty strings, so they are optional for the first build. Never place private API keys in a `NEXT_PUBLIC_` variable.
@@ -100,7 +99,6 @@ The central config safely treats blank endpoints as empty strings, so they are o
 | `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical production origin used by Next.js metadata. |
 | `NEXT_PUBLIC_GENERAL_FORM_ENDPOINT` | No | Future general contact submission URL. |
 | `NEXT_PUBLIC_SERVICE_FORM_ENDPOINT` | No | Future repair and mobile service submission URL. |
-| `NEXT_PUBLIC_LOGISTICS_FORM_ENDPOINT` | No | Future transportation quote submission URL. |
 | `NEXT_PUBLIC_GOOGLE_MAPS_URL` | No | Future shop map or directions link. |
 
 Do not commit `.env` or `.env.local`. Only `.env.example` belongs in source control.
@@ -144,7 +142,7 @@ Before a public launch, confirm and replace:
 - [ ] All division email addresses
 - [ ] Shop address and map link
 - [ ] Business hours and holiday availability
-- [ ] Mobile, shop, and transportation service areas
+- [ ] Mobile and shop service areas
 - [ ] USDOT and MC authority information, if applicable
 - [ ] Insurance and licensing statements, if approved
 - [ ] Social and Google Business Profile links
@@ -155,8 +153,8 @@ Before a public launch, confirm and replace:
 
 ## Future development roadmap
 
-- Dedicated Mobile Service, Auto & Diesel, Logistics, and Fleet Services pages
-- Mobile service, shop appointment, transportation quote, and fleet consultation forms
+- Dedicated Mobile Service, Auto & Diesel, Equipment & Supply, and Fleet Services pages
+- Mobile service, shop appointment, equipment quote, and fleet consultation forms
 - Accessible validation plus success and error states
 - LocalBusiness structured data after address and service-area confirmation
 - Service-area and FAQ content based on verified operations

@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Iron Ridge Service Group for mobile service, shop repair, fleet support, or transportation.",
+  description: "Contact Iron Ridge Service for mobile service, shop repair, fleet support, or equipment quotes.",
 };
 
 export default function ContactPage() {

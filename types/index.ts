@@ -1,4 +1,4 @@
-export type DivisionKey = "mobile" | "shop" | "logistics";
+export type DivisionKey = "mobile" | "shop";
 
 export type ContactRequest = {
   name: string;

@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 
 const navigation = [
   { href: "/", label: "Home" },
-  { href: "/#divisions", label: "Divisions" },
+  { href: "/#services", label: "Services" },
   { href: "/shop", label: "Shop" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -20,7 +20,7 @@ export function Header() {
     <header className="site-header">
       <div className="header-inner container">
         <Link className="brand" href="/" aria-label={`${siteConfig.name} home`}>
-          <Image className="header-logo" src="/images/branding/iron-ridge-header-logo.jpg" alt="Iron Ridge Service Group — Built to keep you moving" width={485} height={228} priority unoptimized />
+          <Image className="header-logo" src="/images/branding/iron-ridge-service-header.jpg" alt="Iron Ridge Service — Built to keep you moving" width={485} height={228} priority unoptimized />
 
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">

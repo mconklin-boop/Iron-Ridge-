@@ -1,4 +1,4 @@
-.about-hero { position: relative; min-height: 650px; display: flex; align-items: center; overflow: hidden; color: white; background: #080909 url("/images/branding/iron-ridge-brand-banner.jpg") center / cover no-repeat; }
+.about-hero { position: relative; min-height: 650px; display: flex; align-items: center; overflow: hidden; color: white; background: #080909 url("/images/branding/iron-ridge-service-banner.jpg") center / cover no-repeat; }
 .about-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,5,6,.97) 0%, rgba(4,5,6,.88) 45%, rgba(4,5,6,.35) 75%, rgba(4,5,6,.2) 100%); }
 .about-hero-content { position: relative; z-index: 1; padding-block: 100px; }
 .about-hero h1 { max-width: 820px; margin-bottom: 22px; font-size: clamp(3.5rem, 7.4vw, 6.8rem); }

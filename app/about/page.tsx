@@ -27,17 +27,17 @@ import { siteConfig } from "@/config/site";
 import "./about.css";
 
 export const metadata: Metadata = {
-  title: "About Iron Ridge Service Group | Automotive, Diesel & Fleet Repair",
-  description: "Learn about Iron Ridge Service Group, providing professional automotive, diesel, fleet, equipment, shop, and mobile repair services throughout Colorado.",
+  title: "About Iron Ridge Service | Automotive, Diesel & Fleet Repair",
+  description: "Learn about Iron Ridge Service, providing professional automotive, diesel, fleet, equipment, shop, and mobile repair services throughout Colorado.",
   openGraph: {
-    title: "About Iron Ridge Service Group | Automotive, Diesel & Fleet Repair",
+    title: "About Iron Ridge Service | Automotive, Diesel & Fleet Repair",
     description: "Professional automotive, diesel, fleet, equipment, shop, and mobile repair services throughout Colorado.",
     url: "/about",
     images: [{
-      url: "/images/branding/iron-ridge-brand-banner.jpg",
+      url: "/images/branding/iron-ridge-service-banner.jpg",
       width: 1400,
       height: 583,
-      alt: "Iron Ridge Service Group shop and mobile repair services",
+      alt: "Iron Ridge Service shop and mobile repair services",
     }],
   },
 };
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="container about-hero-content">
           <p className="eyebrow">About Iron Ridge</p>
           <h1>Built to Keep You Moving.</h1>
-          <p>Iron Ridge Service Group provides professional shop and mobile repair services for individual customers, owner-operators, commercial fleets, and businesses throughout Colorado.</p>
+          <p>Iron Ridge Service provides professional shop and mobile repair services for individual customers, owner-operators, commercial fleets, and businesses throughout Colorado.</p>
           <div className="button-row">
             <a className="button button-primary" href={siteConfig.links.phone}>Schedule Service <Phone size={18} /></a>
             <Link className="button button-secondary" href="/contact">Contact Our Team <ArrowRight size={18} /></Link>
@@ -94,13 +94,13 @@ export default function AboutPage() {
           <div className="about-copy">
             <p className="eyebrow">Who we are</p>
             <h2>More Than a Repair Shop</h2>
-            <p>At Iron Ridge Service Group, we believe every repair is about more than fixing a vehicle. It is about keeping families on the road, businesses operating, and fleets productive.</p>
+            <p>At Iron Ridge Service, we believe every repair is about more than fixing a vehicle. It is about keeping families on the road, businesses operating, and fleets productive.</p>
             <p>Whether a customer brings a vehicle into our repair facility or requests one of our fully equipped mobile service trucks, our mission is simple: deliver exceptional workmanship, honest communication, and dependable service every time.</p>
             <p>We proudly provide professional automotive, diesel, fleet, and equipment repair for individual customers, commercial fleets, owner-operators, contractors, and businesses throughout Colorado.</p>
             <p>From routine maintenance to complex diagnostics and major mechanical repairs, our experienced technicians have the knowledge, tools, and commitment to get the job done right.</p>
           </div>
           <figure className="about-image-frame">
-            <Image src="/images/branding/iron-ridge-brand-banner.jpg" alt="Iron Ridge service truck and professional repair facility" width={1400} height={583} unoptimized />
+            <Image src="/images/branding/iron-ridge-service-banner.jpg" alt="Iron Ridge service truck and professional repair facility" width={1400} height={583} unoptimized />
             <figcaption><MapPin size={18} /> Shop and mobile service throughout Colorado</figcaption>
           </figure>
         </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
             <h2>Keeping Fleets Productive</h2>
           </div>
           <div className="about-fleet-copy">
-            <p>We understand that vehicle downtime costs money. That is why Iron Ridge Service Group works closely with commercial customers to develop maintenance programs designed to reduce breakdowns, improve reliability, control repair costs, and keep equipment operating efficiently.</p>
+            <p>We understand that vehicle downtime costs money. That is why Iron Ridge Service works closely with commercial customers to develop maintenance programs designed to reduce breakdowns, improve reliability, control repair costs, and keep equipment operating efficiently.</p>
             <p>Our fleet services may include scheduled preventive maintenance, inspections, diagnostics, repairs, emergency roadside support, and on-site fleet service tailored to the needs of each operation.</p>
             <p>Whether a business manages a few vehicles or a large commercial fleet, our goal is to become a dependable long-term maintenance partner.</p>
             <a className="button button-primary" href={siteConfig.links.phone}>Request Fleet Service <Phone size={18} /></a>
@@ -189,7 +189,7 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow">Our road ahead</p>
             <h2>Built for the Road Ahead</h2>
-            <p>Iron Ridge Service Group was created with a vision to become a trusted provider of automotive, diesel, fleet, and equipment repair throughout Colorado.</p>
+            <p>Iron Ridge Service was created with a vision to become a trusted provider of automotive, diesel, fleet, and equipment repair throughout Colorado.</p>
             <p>As we grow, our commitment will remain the same: invest in our people, our tools, our technology, and our customers while delivering dependable service businesses and families can rely on.</p>
             <p>Whether a customer needs service at our repair facility or on-site through Iron Ridge Mobile Service, our team is ready to help.</p>
           </div>
@@ -198,7 +198,7 @@ export default function AboutPage() {
 
       <section className="about-final-cta">
         <div className="container about-final-cta-inner">
-          <div><p className="eyebrow">Shop or mobile service</p><h2>Ready to Get Back on the Road?</h2><p>Schedule professional shop or mobile service with Iron Ridge Service Group.</p></div>
+          <div><p className="eyebrow">Shop or mobile service</p><h2>Ready to Get Back on the Road?</h2><p>Schedule professional shop or mobile service with Iron Ridge Service.</p></div>
           <div className="button-row">
             <a className="button button-light" href={siteConfig.links.phone}>Schedule Service</a>
             <a className="button about-call-button" href={siteConfig.links.phone}><Phone size={18} /> Call Iron Ridge</a>

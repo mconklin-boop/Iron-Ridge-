@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Terms for using the Iron Ridge Service Group website.",
+  description: "Terms for using the Iron Ridge Service website.",
 };
 
 export default function TermsPage() {
@@ -18,7 +18,7 @@ export default function TermsPage() {
           <h2>Informational use</h2>
           <p>Website content is general information and does not create a service agreement, quote, warranty, or guarantee of availability.</p>
           <h2>Service confirmation</h2>
-          <p>Services, operating areas, response times, transportation authority, licensing, insurance, and pricing must be confirmed directly with Iron Ridge before work is scheduled.</p>
+          <p>Services, operating areas, response times, licensing, insurance, and pricing must be confirmed directly with Iron Ridge before work is scheduled.</p>
           <h2>Website accuracy</h2>
           <p>Iron Ridge may update or correct website content without notice. Visitors should verify important information before relying on it.</p>
           <h2>Contact</h2>

@@ -87,6 +87,7 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
 .section-heading > p:last-child { margin: 0; color: #5c6266; }
 .division-section { background: white; }
 .division-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
+.service-grid { grid-template-columns: repeat(2, 1fr); }
 .division-card { position: relative; min-height: 450px; display: flex; flex-direction: column; padding: 32px; border: 1px solid var(--line); background: #f7f7f5; }
 .division-card::after { content: ""; position: absolute; inset: auto 0 0; height: 4px; background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
 .division-card:hover::after { transform: scaleX(1); }
@@ -140,7 +141,7 @@ h1 { max-width: 850px; margin-bottom: 24px; font-size: clamp(3rem, 6vw, 5.4rem);
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { min-height: 330px; }
   .brand-ribbon-inner { flex-wrap: wrap; gap: 14px 20px; padding-block: 16px; }
-  .division-grid { grid-template-columns: 1fr; }
+  .division-grid, .service-grid { grid-template-columns: 1fr; }
   .division-card { min-height: auto; }
   .capabilities-grid { grid-template-columns: 1fr; gap: 42px; }
   .footer-main { grid-template-columns: 1.5fr 1fr 1fr; }
