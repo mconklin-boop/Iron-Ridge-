@@ -6,9 +6,9 @@ export const siteConfig = {
     shop: "Iron Ridge Auto & Diesel",
     logistics: "Iron Ridge Logistics",
   },
-  phone: "720-460-0337",
-  emergencyPhone: "720-460-0337",
-  email: "info@example.com",
+  phone: "720-614-8248",
+  emergencyPhone: "720-614-8248",
+  email: "mike@ironridgeservice.com",
   emails: {
     mobile: "mobile@example.com",
     shop: "service@example.com",
@@ -33,9 +33,9 @@ export const siteConfig = {
     logistics: process.env.NEXT_PUBLIC_LOGISTICS_FORM_ENDPOINT || "",
   },
   links: {
-    phone: "tel:+17204600337",
-    emergencyPhone: "tel:+17204600337",
-    email: "mailto:info@example.com",
+    phone: "tel:+17206148248",
+    emergencyPhone: "tel:+17206148248",
+    email: "mailto:mike@ironridgeservice.com",
   },
 } as const;
 

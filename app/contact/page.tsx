@@ -13,7 +13,7 @@ export default function ContactPage() {
         <header className="page-header">
           <p className="eyebrow">Start a conversation</p>
           <h1>Tell us what you need.</h1>
-          <p>The first-version contact details below are placeholders. Update them in the central site configuration before launch.</p>
+          <p>Call or email Iron Ridge Service for equipment quotes, service requests and fleet support.</p>
         </header>
         <div className="division-grid">
           <article className="division-card">
@@ -23,7 +23,7 @@ export default function ContactPage() {
           </article>
           <article className="division-card">
             <p className="eyebrow">Urgent roadside service</p><h3>Call for availability</h3>
-            <p>For a disabled vehicle or urgent roadside need, call the emergency placeholder number. Response time is subject to confirmation.</p>
+            <p>For a disabled vehicle or urgent roadside need, call the number below. Response time is subject to confirmation.</p>
             <a className="button button-primary" href={siteConfig.links.emergencyPhone}>{siteConfig.emergencyPhone}</a>
           </article>
           <article className="division-card">
